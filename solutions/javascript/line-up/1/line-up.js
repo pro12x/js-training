@@ -5,19 +5,19 @@
 
 export const format = (word, n) => {
   const lastTwoDigits = n % 100;
-  let ord = '';
+  let ordinalSuffix = '';
 
   if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
-    ord = 'th';
+    ordinalSuffix = 'th';
   } else if (n.toString().endsWith('1')) {
-    ord = 'st';
+    ordinalSuffix = 'st';
   } else if (n.toString().endsWith('2')) {
-    ord = 'nd';
+    ordinalSuffix = 'nd';
   } else if (n.toString().endsWith('3')) {
-    ord = 'rd';
+    ordinalSuffix = 'rd';
   } else {
-    ord = 'th';
+    ordinalSuffix = 'th';
   }
 
-  return `${word}, you are the ${n}${ord} customer we serve today. Thank you!`;
+  return `${word}, you are the ${n}${ordinalSuffix} customer we serve today. Thank you!`;
 }
