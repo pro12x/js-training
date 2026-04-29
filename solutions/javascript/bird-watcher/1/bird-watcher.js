@@ -27,8 +27,17 @@ export function totalBirdCount(birdsPerDay) {
  */
 export function birdsInWeek(birdsPerDay, week) {
   let total = 0
+  if (!Number.isInteger(week) || week <= 0) {
+    return total
+  }
+
   const start = (week - 1) * 7
-  for (let i = start; i < start + 7; i++) {
+  if (start >= birdsPerDay.length) {
+    return total
+  }
+
+  const end = Math.min(start + 7, birdsPerDay.length)
+  for (let i = start; i < end; i++) {
     total += birdsPerDay[i]
   }
   return total
