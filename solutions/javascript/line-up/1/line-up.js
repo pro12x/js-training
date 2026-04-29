@@ -3,7 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-export const format = (word, n) => {
+export function format(word, n) {
   const lastTwoDigits = n % 100;
   let ordinalSuffix = '';
 
