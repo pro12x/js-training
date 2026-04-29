@@ -20,4 +20,4 @@ export const format = (word, n) => {
   }
 
   return `${word}, you are the ${n}${ordinalSuffix} customer we serve today. Thank you!`;
-}
+};
