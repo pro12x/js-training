@@ -4,20 +4,20 @@
 //
 
 export function format(word, n) {
-  const lastTwoDigits = n % 100;
-  let ordinalSuffix = '';
+  const lastTwoDigits = n % 100
+  let ordinalSuffix = ''
 
   if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
-    ordinalSuffix = 'th';
+    ordinalSuffix = 'th'
   } else if (n.toString().endsWith('1')) {
-    ordinalSuffix = 'st';
+    ordinalSuffix = 'st'
   } else if (n.toString().endsWith('2')) {
-    ordinalSuffix = 'nd';
+    ordinalSuffix = 'nd'
   } else if (n.toString().endsWith('3')) {
-    ordinalSuffix = 'rd';
+    ordinalSuffix = 'rd'
   } else {
-    ordinalSuffix = 'th';
+    ordinalSuffix = 'th'
   }
 
-  return `${word}, you are the ${n}${ordinalSuffix} customer we serve today. Thank you!`;
-};
+  return `${word}, you are the ${n}${ordinalSuffix} customer we serve today. Thank you!`
+}
