@@ -7,7 +7,9 @@
  * @returns {Record<string, number>} new score board
  */
 export function createScoreBoard() {
-  return { "The Best Ever": 1000000 }
+  return {
+    "The Best Ever": 1000000
+  }
 }
 
 /**
