@@ -2,7 +2,12 @@
 // This is only a SKELETON file for the 'Line Up' exercise. It's been provided as a
 // convenience to get you started writing code faster.
 //
-
+/**
+ * 
+ * @param word
+ * @param n
+ * @return {`${string}, you are the ${string}${string} customer we serve today. Thank you!`}
+ */
 export function format(word, n) {
   const lastTwoDigits = n % 100
   let ordinalSuffix = ''
