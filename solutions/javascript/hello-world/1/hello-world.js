@@ -3,6 +3,9 @@
 // convenience to get you started writing code faster.
 //
 
+/**
+ * @return {string}
+ */
 export function hello() {
   return 'Hello, World!';
 }
