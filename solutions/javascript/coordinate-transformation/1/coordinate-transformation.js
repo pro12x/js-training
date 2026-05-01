@@ -62,7 +62,6 @@ export function composeTransform(f, g) {
  * then memoized result returned.
  *
  * @param {CallbackType} f the transformation function to memoize, assumes takes two arguments 'x' and 'y'
- *
  * @returns {CallbackType} a function which takes x and y arguments, and will either return the saved result
  *  if the arguments are the same on subsequent calls, or compute a new result if they are different.
  */
